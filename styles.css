@@ -1,0 +1,48 @@
+/* css reset */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+  background-color: #eee;
+}
+main {
+  width: 600px;
+  margin: auto;
+  min-height: 100vh;
+}
+.container {
+  margin: auto;
+  text-align: center;
+}
+.input-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul {
+  margin-top: 25px;
+}
