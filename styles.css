@@ -26,6 +26,7 @@ html {
 
 body {
   background-color: #eee;
+
 }
 main {
   width: 600px;
@@ -37,12 +38,43 @@ main {
   text-align: center;
 }
 .input-container {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
 ul {
-  margin-top: 25px;
+  width: 300px;
+  margin: 30% auto;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
+
+ul, input, button {
+  font-family: sans-serif;
+  line-height: 25px;
+}
+
+input, button {
+  font-size: 16px;
+}
+
+
+li {
+  border-bottom: solid 1px #ddd;
+  padding: 16px 16px 16px 16%;
+  text-transform: capitalize;
+  color: #135156;
+}
+
+li:last-child {
+  border-bottom:none;
+
+}
+
+
+
+
