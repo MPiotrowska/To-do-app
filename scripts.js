@@ -1,27 +1,39 @@
 //variables
 
-var todos = document.getElementById('todos');
+let listHasTodos = false;
 
-var input = document.getElementById('input');
+const todos = document.getElementById('todos');
 
-var button = document.getElementById('button');
+const input = document.getElementById('input');
 
+const button = document.getElementById('button');
 
+const message = document.getElementById('message');
 
 
 //functions
 
 function addTodos() {
     // save user input
-    var userInput = event.target.value;
+    const userInput = event.target.value;
     // add html with user input
-    var listItem = `<li>${userInput}</li>`;
+    const listItem = `<li>${userInput}</li>`;
     // append to the page
     todos.insertAdjacentHTML('beforeend', listItem);
     //clear input so user doens't need to do it
-    event.target.value = ''
+    event.target.value = '';
+    // set listHasTodos to be true
+    listHasTodos = true;
+
+    // if the are todos hide the initial message
+    if (listHasTodos === true) {
+        message.classList.add('hidden')
+    }
 }
 
 
 // Listen for change event
 input.addEventListener('change', addTodos);
+
+
+
