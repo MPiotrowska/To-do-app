@@ -1,0 +1,19 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "description": "'This is a sample to do app'",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "'npm test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPiotrowska/To-do-app.git"
+  },
+  "author": "'Monika Piotrowska'",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MPiotrowska/To-do-app/issues"
+  },
+  "homepage": "https://github.com/MPiotrowska/To-do-app#readme"
+}
